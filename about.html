@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="Sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="navlinks" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()" ></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Course.html">COURSE</a></li>
+                    <li><a href="BLOG.html">BLOG</a></li>
+                    <li><a href="Contac.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()" ></i>
+
+        </nav>
+        <h1>What is IMSEC</h1>
+    
+        
+    </section>
+
+<!-- about us content -->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>About IMSEC</h1>
+            <p>Located in the industrial city of Ghaziabad, IMS Engineering College is known for quality technical and management education, centres of excellence, innovative teaching pedagogy, discipline, and other creative efforts.
+
+                IMSEC Ghaziabad is one of the top-notch Engineering college in North India, providing technical education and 100% employability prospects to its students. It is ranked 4th in North Region wise ranking and 16th in Top 100 private Engineering college by Times Engineering Institute Ranking Survey 2020 . </p>
+            <a href="" class="herobtn redbtn">EXPlORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg" >
+        </div>
+    </div>
+</section>
+
+    
+<!-- ---------Footer-------- -->
+<section class="footer">
+    <h4>STAY CONNETED</h4>
+    <p>NH-09, Adhyatmik Nagar, Near Dasna, Distt: Ghaziabad. UP.
+        <br> Landline: 0120-4940000,    
+         Email-Id: imsec@imsec.ac.in
+         WhatsApp: +91-9821396583
+         
+        <br> Admission:
+         +91-9821396581/82/83
+         Toll-Free(Admission):18001028393
+        <br> Email-Id: enquiry@imsec.ac.in</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-github"></i>
+        
+    </div>
+</section>
+
+
+<!--------------------- java script for toggle menu ------------------------------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right = "0";
+            
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
